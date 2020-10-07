@@ -11,6 +11,7 @@ a{
 }
 
 .sidebar{
+    float: left;
     color: rgba(255, 255, 255, 0.7);
     display:flex;
     flex-direction: column;
@@ -32,4 +33,23 @@ a{
 
 .install{
     border-bottom: 1px solid lightgrey;
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 150px);
+    height: calc(100vh - 80px);
+    float: left;
+    background-image: linear-gradient(to bottom right, #898c00, #3f4000, #020e11);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .button{
+    padding:10px 20px;
 }
