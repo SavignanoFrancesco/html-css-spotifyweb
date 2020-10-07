@@ -234,6 +234,9 @@ footer{
         border-radius: 50%;
     }
 
+    .now-artist{
+        display: none;
+    }
 }
 
 @media screen and (max-width:568px){
@@ -252,5 +255,13 @@ footer{
 
     main{
         width: calc(100% - 75px);
+    }
+
+    .volume-settings{
+        display: none;
+    }
+
+    .player{
+        width: 70%;
     }
 }
