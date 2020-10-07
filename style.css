@@ -2,12 +2,22 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 a{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.7);
+}
+
+h1{
+    padding-top: 20px;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
 }
 
 .sidebar{
@@ -36,9 +46,10 @@ a{
 }
 
 main{
-    flex-grow: 1;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
     width: calc(100% - 150px);
     height: calc(100vh - 80px);
     float: left;
@@ -47,9 +58,44 @@ main{
 
 .navbar{
     display: flex;
-    justify-content: space-around;
+    height: 50px;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
 }
 
-.navbar .button{
-    padding:10px 20px;
+.button{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.music{
+    height: calc(100% - 50px);
+    width: 80%;
+    overflow-y: scroll;
+}
+
+.box1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.artist{
+    padding: 20px;
+    padding-left: 0;
+    text-align: center;
+}
+
+.artist img{
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.artist p{
+    display: inline-block;
+    position: relative;
+    left: 5px;
 }
