@@ -31,6 +31,12 @@ h1{
     height: calc(100vh - 80px);
 }
 
+.sidebarup{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
 .brand-logo{
     text-align: center;
     font-size: 30px;
@@ -64,7 +70,7 @@ main{
     align-items: center;
 }
 
-.button{
+.navbar .button{
     height: 50px;
     display: flex;
     align-items: center;
