@@ -37,10 +37,15 @@ h1{
     padding-bottom: 20px;
 }
 
-.brand-logo{
+.sidebar .brand-logo{
     text-align: center;
     font-size: 30px;
     padding: 10px 5px;
+    color: white;
+}
+
+.sidebar .brand-logo>*{
+    color: white;
 }
 
 .button{
@@ -60,6 +65,7 @@ main{
     height: calc(100vh - 80px);
     float: left;
     background-image: linear-gradient(to bottom right, #898c00, #3f4000, #020e11);
+    padd
 }
 
 .navbar{
@@ -68,6 +74,19 @@ main{
     width: 80%;
     justify-content: center;
     align-items: center;
+}
+
+.hamburger{
+    padding-left: 5px;
+}
+
+.line{
+    height: 4px;
+    width: 25px;
+    margin: 4px 0;
+    border: 1px solid white;
+    background-color: white;
+    display: none;
 }
 
 .navbar .button{
@@ -84,7 +103,7 @@ main{
 
 .box1{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap
 }
 
 .artist{
@@ -104,4 +123,61 @@ main{
     display: inline-block;
     position: relative;
     left: 5px;
+}
+
+@media screen and (max-width:768px) {
+
+    h1{
+        padding-left: 8px;
+    }
+
+    .box1{
+        padding-left: 8px;
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar a{
+        display: none;
+    }
+
+    .navbar .hamburger .line{
+        display: block;
+    }
+
+    .music{
+        width: 100%;
+    }
+
+    .artist img{
+        display: block;
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+    }
+
+}
+
+@media screen and (max-width:568px){
+
+    .sidebar{
+        width: 75px;
+        align-items: center;
+    }
+    .sidebar span, .sidebar h5{
+        display: none;
+    }
+
+    .sidebar i{
+        font-size: 30px;
+    }
+
+    main{
+        width: calc(100% - 75px);
+    }
 }
