@@ -393,6 +393,10 @@ footer{
     .now-artist{
         display: none;
     }
+
+    .player{
+        margin-right: 10px;
+    }
 }
 
 @media screen and (max-width:568px){
@@ -425,5 +429,14 @@ footer{
 
     .player{
         width: 70%;
+    }
+}
+
+@media screen and (max-width:386px) {
+    h1{
+        text-align: center;
+    }
+    .box1{
+        justify-content: center;
     }
 }
